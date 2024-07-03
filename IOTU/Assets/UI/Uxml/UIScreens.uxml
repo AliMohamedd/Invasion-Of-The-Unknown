@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Template name="StartScreen" src="project://database/Assets/UI/Uxml/StartScreen.uxml?fileID=9197481963319205126&amp;guid=289c3f991e5d8614781ce7c5a18a7c2e&amp;type=3#StartScreen" />
+    <ui:Template name="FirstMainMenuScreen" src="project://database/Assets/UI/Uxml/FirstMainMenuScreen.uxml?fileID=9197481963319205126&amp;guid=c42157f259aa918479e21381334171b5&amp;type=3#FirstMainMenuScreen" />
+    <ui:Template name="MainMenuScreen" src="project://database/Assets/UI/Uxml/MainMenuScreen.uxml?fileID=9197481963319205126&amp;guid=de722287c112cf7419f2109ab6d07226&amp;type=3#MainMenuScreen" />
+    <ui:Template name="AudioOptionsScreen" src="project://database/Assets/UI/Uxml/AudioOptionsScreen.uxml?fileID=9197481963319205126&amp;guid=96d904f8ecd0b13489f9fc6c006475ea&amp;type=3#AudioOptionsScreen" />
+    <ui:Template name="VideoOptionsScreen" src="project://database/Assets/UI/Uxml/VideoOptionsScreen.uxml?fileID=9197481963319205126&amp;guid=f56def0f9fdfd8a4e8b5c68aa3dcbfe6&amp;type=3#VideoOptionsScreen" />
+    <ui:Template name="GamePlayScreen" src="project://database/Assets/UI/Uxml/GamePlayScreen.uxml?fileID=9197481963319205126&amp;guid=3f3395e064616d34ca148a2b4aa2e7bb&amp;type=3#GamePlayScreen" />
+    <ui:Template name="InventoryScreen" src="project://database/Assets/UI/Uxml/InventoryScreen.uxml?fileID=9197481963319205126&amp;guid=0aba6e17d0db9b240923e336f69144fb&amp;type=3#InventoryScreen" />
+    <ui:Template name="PauseScreen" src="project://database/Assets/UI/Uxml/PauseScreen.uxml?fileID=9197481963319205126&amp;guid=141fbee890be08a41a2e984a3ee83ed7&amp;type=3#PauseScreen" />
+    <ui:Template name="LoseScreen" src="project://database/Assets/UI/Uxml/LoseScreen.uxml?fileID=9197481963319205126&amp;guid=02036d69a0eef694a971f7bd812ca346&amp;type=3#LoseScreen" />
+    <ui:Template name="SplashScreen" src="project://database/Assets/UI/Uxml/SplashScreen.uxml?fileID=9197481963319205126&amp;guid=b13d8008d5fb79a4c8d56e0ac94ca033&amp;type=3#SplashScreen" />
+    <ui:Instance template="StartScreen" name="StartScreen" picking-mode="Ignore" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="FirstMainMenuScreen" name="FirstMainMenuScreen" picking-mode="Ignore" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="MainMenuScreen" name="MainMenuScreen" picking-mode="Ignore" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="AudioOptionsScreen" name="AudioOptionsScreen" picking-mode="Ignore" style="width: 100%; height: 100%; position: absolute;" />
+    <ui:Instance template="VideoOptionsScreen" name="VideoOptionsScreen" picking-mode="Ignore" style="position: absolute; height: 100%; width: 100%;" />
+    <ui:Instance template="GamePlayScreen" name="GamePlayScreen" picking-mode="Ignore" style="position: absolute; height: 100%; width: 100%;" />
+    <ui:Instance template="InventoryScreen" name="InventoryScreen" picking-mode="Ignore" style="position: absolute; height: 100%; width: 100%;" />
+    <ui:Instance template="PauseScreen" name="PauseScreen" picking-mode="Ignore" style="position: absolute; width: 100%; height: 100%;" />
+    <ui:Instance template="LoseScreen" name="LoseScreen" picking-mode="Ignore" style="width: 100%; height: 100%; position: absolute;" />
+    <ui:Instance template="SplashScreen" name="SplashScreen" picking-mode="Ignore" style="position: absolute; height: 100%; width: 100%;" />
+</ui:UXML>

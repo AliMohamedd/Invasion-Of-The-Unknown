@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb73dceeb7485b499f8cd03aa4a45ba, type: 3}
+  m_Name: Knife
+  m_EditorClassIdentifier: 
+  ID: e0ba7c7e-d28c-42a3-aa04-6d535dfa8e34
+  Name: knife
+  Description: Be careful, This knife is so sharp. you could use it to kil jo & Abdo
+  Icon: {fileID: 21300000, guid: a4e163cf65a743e42a460f24ff98932b, type: 3}
+  SlotDimension:
+    Height: 1
+    Width: 1
