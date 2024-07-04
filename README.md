@@ -1,5 +1,9 @@
 # Invasion-Of-The-Unknown
-- This repository about game development with unity
-- once you make changes save it as a branch
+- This is an indie game made by AYA stusio for primarily game dev learning.
+- The idea of the game is to walk thruoph until you find the key and escape from the house while an enemy chases you around.
 
-# Good luck In Our Journey
+# About studio and developers
+- This is the firist game we made it as a beginners.
+- The  team consists of three members:
+  **Ali** - **Abdelrahman** - **Yousef**
+
