@@ -1,0 +1,101 @@
+#unity-dragger {
+    width: 5px;
+    height: 38%;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    top: 45%;
+    background-color: rgb(218, 0, 55);
+    font-size: 5px;
+}
+
+#unity-tracker {
+    height: 15%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.volume-slider {
+    position: relative;
+    top: -58%;
+}
+
+.volume-slider Label {
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+    -unity-font-definition: url('project://database/Assets/UI/Fonts/Roboto/Roboto-Medium%20SDF.asset?fileID=11400000&guid=55ac6e28ecde17644be05875f822c168&type=2#Roboto-Medium SDF');
+    font-size: 135%;
+    translate: 0 4px;
+    color: rgb(255, 255, 255);
+    margin-right: 6%;
+}
+
+.volume-slider #unity-dragger {
+    width: 3%;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    height: 40px;
+}
+
+.volume-slider #unity-tracker {
+    background-color: rgb(255, 255, 255);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.volume-slider #unity-dragger:hover {
+    scale: 1.2 1.2;
+}
+
+.volume-slider-number {
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-font-definition: url('project://database/Assets/_ThirdParty/Fonts/Roboto/Roboto-Black%20SDF.asset?fileID=11400000&guid=e74ebc05ab3564fb187648ced4e2c0fa&type=2#Roboto-Black SDF');
+    font-size: 44px;
+    top: -10%;
+    left: 6%;
+    color: rgb(0, 127, 217);
+    -unity-text-align: upper-right;
+}
+
+.change-button {
+    left: -27%;
+    top: 1%;
+    -unity-font-definition: url('project://database/Assets/UI/Fonts/Roboto/Roboto-Black%20SDF.asset?fileID=11400000&guid=ec648cfc57850254a9a3fa6046ae2f8d&type=2#Roboto-Black SDF');
+    font-size: 45px;
+    letter-spacing: 24px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.change-button:hover {
+    color: rgb(218, 0, 55);
+    left: -26%;
+    transition-duration: 0.15s;
+}

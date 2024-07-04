@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/UI/Uss/MenuScreens.uss?fileID=7433441132597879392&amp;guid=d186c95fa5985344ab7b362864c28892&amp;type=3#MenuScreens" />
+    <ui:VisualElement name="lose__container" picking-mode="Ignore" style="width: 100%; height: 100%;">
+        <ui:VisualElement name="lose__background" picking-mode="Ignore" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); position: absolute; width: 100%; height: 100%;" />
+        <ui:Label tabindex="-1" text="You Are Died" parse-escape-sequences="true" display-tooltip-when-elided="true" name="died-label" style="position: absolute; align-self: center; top: 45%; -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/Roboto/Roboto-Black%20SDF.asset?fileID=11400000&amp;guid=ec648cfc57850254a9a3fa6046ae2f8d&amp;type=2#Roboto-Black SDF&apos;); color: rgb(218, 0, 55); -unity-font-style: normal; font-size: 72%; letter-spacing: 10px; left: 37%;" />
+    </ui:VisualElement>
+</ui:UXML>

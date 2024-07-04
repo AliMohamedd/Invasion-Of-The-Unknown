@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/UI/Uss/MenuScreens.uss?fileID=7433441132597879392&amp;guid=d186c95fa5985344ab7b362864c28892&amp;type=3#MenuScreens" />
+    <Style src="project://database/Assets/UI/Uss/Buttons.uss?fileID=7433441132597879392&amp;guid=7337afd978364db40972e0da77ccefd1&amp;type=3#Buttons" />
+    <ui:VisualElement name="pause__container" style="flex-grow: 1; align-items: center; align-self: center; top: 4%; height: 88px; max-height: 776px;">
+        <ui:Button text="Start Menu" parse-escape-sequences="true" display-tooltip-when-elided="true" name="start-menu-button" class="pauseButtons" />
+        <ui:Button text="Exit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="exit_button" class="pauseButtons" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,20 @@
+#unity-progress-bar {
+}
+
+.unity-progress-bar__background {
+    background-color: rgb(68, 68, 68);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0);
+}
+
+.unity-progress-bar__progress {
+    background-color: rgb(218, 0, 55);
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
