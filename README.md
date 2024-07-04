@@ -1,6 +1,6 @@
 # Invasion-Of-The-Unknown
-- This is an indie game made by AYA stusio for primarily game dev learning.
-- The idea of the game is to walk thruoph until you find the key and escape from the house while an enemy chases you around.
+- This is an indie game made by AYA studio for primarily game dev learning.
+- The idea of the game is to walk thruogh until you find the key and escape from the house while an enemy chases you around.
 
 ## About studio and developers
 - Studio established in 2023
@@ -15,4 +15,4 @@
 | made the sequence manager  | made the house manager  |               |
 
 > [!WARNING]
-> You need to download and add the [**Game Level Assets**]() to see the assets in the scene viewport.
+> You need to download and add the [**Game Level Assets**]() package to see the assets in the scene viewport.
