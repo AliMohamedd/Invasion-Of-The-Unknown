@@ -1,10 +1,10 @@
 # Invasion-Of-The-Unknown
 - This is an indie game made by AYA studio for primarily game dev learning.
-- The idea of the game is to walk thruogh until you find the key and escape from the house while an enemy chases you around.
+- The idea of the game is to walk through until you find the key and escape from the house while an enemy chases you around.
 
 ## About studio and developers
 - Studio established in 2023
-- This is the firist game we made it as a beginners.
+- This is the first game we made it as a beginners.
 - The team consists of three members **Ali - Abdelrahman - Jo**
 
 ## The role of each member :
