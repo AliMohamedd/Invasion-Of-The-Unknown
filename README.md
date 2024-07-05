@@ -15,4 +15,4 @@
 | made the sequence manager  | made the house manager  |               |
 
 > [!WARNING]
-> You need to download and add the [**Game Level Assets**]() package to see the assets in the scene viewport.
+> You need to download and add the [**Game Level Assets**](https://www.mediafire.com/file/yx4hyxy434klzkf/GameLevelAssets.unitypackage/file) package to see the assets in the scene viewport.
