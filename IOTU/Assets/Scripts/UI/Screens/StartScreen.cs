@@ -1,4 +1,5 @@
 using UnityEngine.UIElements;
+using UnityEngine;
 
 namespace IOTU
 {
@@ -12,6 +13,8 @@ namespace IOTU
 
         bool First;
 
+        GamePlaySO m_gamePlaySO;
+
         // Constructor 
         public StartScreen(VisualElement parentElement) : base(parentElement)
         {
@@ -20,31 +23,14 @@ namespace IOTU
             m_StartButton = m_RootElement.Q<Button>("start__start-button");
 
             // The custom Event Registry unregisters the callback automatically on disable
-            m_EventRegistry.RegisterCallback<ClickEvent>(m_StartButton, evt => loadMenu());
-            SubscribeToEvents();
+            m_EventRegistry.RegisterCallback<ClickEvent>(m_StartButton, evt => LoadMenu());
+            
+            m_gamePlaySO = Resources.Load<GamePlaySO>("GamePlay/GamePlay_Data");
+            LoadData();
         }
 
-        public override void Disable()
-        {
-            base.Disable();
-            UnsubscribeFromEvents();
-        }
-
-        private void SubscribeToEvents()
-        {
-            GameEvents.NextLevel += First_Changed;
-        }
-
-        private void UnsubscribeFromEvents()
-        {
-            GameEvents.NextLevel -= First_Changed;
-        }
-        private void First_Changed(bool val)
-        {
-            First = val;
-        }
         
-        private void loadMenu()
+        private void LoadMenu()
         {
             if (First) 
             {
@@ -55,6 +41,25 @@ namespace IOTU
                 UIEvents.FirstMainMenuScreenShown?.Invoke();
             }
             GameEvents.GameUI?.Invoke();
+        }
+
+        private void LoadData()
+        {
+            if (PlayerPrefs.HasKey("NextLevel"))
+            {
+                if (PlayerPrefs.GetInt("NextLevel") == 1)
+                {
+                    First = true;
+                }
+                else
+                {
+                    First = false;
+                }
+            }
+            else
+            {
+                First = m_gamePlaySO.NextLevel;
+            }
         }
     }
 }

@@ -25,8 +25,27 @@ public class BrightnessScript : MonoBehaviour
         videoSettingsSO = Resources.Load<VideoSettingsSO>("VideoGraphics/VideoSettings_Data");
 
         // Retrieve the brightness and contrast values from the scriptable object
-        float exposure = videoSettingsSO.valueBrightness;
-        float contrast = videoSettingsSO.valueContrast;
+        float exposure;
+        float contrast;
+
+        if (PlayerPrefs.HasKey("Brightness"))
+        {
+            exposure  = PlayerPrefs.GetFloat("Brightness");
+        }
+        else
+        {
+            exposure = videoSettingsSO.valueBrightness;
+        }
+         
+         if (PlayerPrefs.HasKey("Contrast"))
+        {
+            contrast = PlayerPrefs.GetFloat("Contrast");
+        }
+        else
+        {
+            contrast = videoSettingsSO.valueContrast;
+        }
+
 
         // Adjust brightness and contrast using the retrieved values
         SetBrightness((exposure * 6) - 3);

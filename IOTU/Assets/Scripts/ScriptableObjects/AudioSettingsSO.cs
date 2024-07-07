@@ -112,19 +112,22 @@ namespace IOTU
         // Update the master volume when the event is triggered.
         private void SettingsEvents_MasterVolumeChanged(float volume)
         {
-            MasterVolume = volume;
+            PlayerPrefs.SetFloat("MasterVolume", volume);
+            PlayerPrefs.Save();
         }
 
         // Update the sound effects volume when the event is triggered.
         private void SettingsEvents_SFXVolumeChanged(float volume)
         {
-            SoundEffectsVolume = volume;
+            PlayerPrefs.SetFloat("SFXVolume", volume);
+            PlayerPrefs.Save();
         }
 
         // Update the music volume when the event is triggered.
         private void SettingsEvents_MusicVolumeChanged(float volume)
         {
-            MusicVolume = volume;
+            PlayerPrefs.SetFloat("MusicVolume", volume);
+            PlayerPrefs.Save();
         }
     }
 }

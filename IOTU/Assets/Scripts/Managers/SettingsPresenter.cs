@@ -70,15 +70,77 @@ namespace IOTU
 
             // Update sliders with the default values from the AudioSettingsSO
             
-            float masterVolume = m_AudioSettingsSO.MasterVolume * 100f;
-            float sfxVolume = m_AudioSettingsSO.SoundEffectsVolume * 100f;
-            float musicVolume = m_AudioSettingsSO.MusicVolume * 100f;
-            float valueBrightness = m_VideoSettingsSO.valueBrightness *100f ;
-            float valueContrast = m_VideoSettingsSO.valueContrast*100f;
-            int pointerRes = m_VideoSettingsSO.pointerRes;
-            int pointerDiff = m_VideoSettingsSO.pointerDiff;
-            bool gamePlaySave = m_GamePlaySO.NextLevel;
+            float masterVolume;
+            float sfxVolume;
+            float musicVolume;
+            float valueBrightness;
+            float valueContrast;
+            int pointerRes;
+            int pointerDiff;
 
+            if (PlayerPrefs.HasKey("MasterVolume"))
+            {
+                masterVolume = PlayerPrefs.GetFloat("MasterVolume") * 100;
+            }
+            else
+            {
+                masterVolume = m_AudioSettingsSO.MasterVolume * 100f;
+            }
+
+            if (PlayerPrefs.HasKey("SFXVolume"))
+            {
+                sfxVolume = PlayerPrefs.GetFloat("SFXVolume") * 100;
+            }
+            else
+            {
+                sfxVolume = m_AudioSettingsSO.SoundEffectsVolume * 100f;
+            }
+             
+            if (PlayerPrefs.HasKey("MusicVolume"))
+            {
+                musicVolume = PlayerPrefs.GetFloat("MusicVolume") * 100;
+            }
+            else
+            {
+                musicVolume = m_AudioSettingsSO.MusicVolume * 100f;
+            }
+
+            if (PlayerPrefs.HasKey("Brightness"))
+            {
+                valueBrightness = PlayerPrefs.GetFloat("Brightness") * 100;
+            }
+            else
+            {
+                valueBrightness = m_VideoSettingsSO.valueBrightness * 100f;
+            }
+
+            if (PlayerPrefs.HasKey("Contrast"))
+            {
+                valueContrast = PlayerPrefs.GetFloat("Contrast") * 100;
+            }
+            else
+            {
+                valueContrast = m_VideoSettingsSO.valueContrast * 100f;
+            }
+
+            if (PlayerPrefs.HasKey("Resolution"))
+            {
+                pointerRes = PlayerPrefs.GetInt("Resolution");
+            }
+            else
+            {
+                pointerRes = m_VideoSettingsSO.pointerRes;
+            }
+
+            if (PlayerPrefs.HasKey("Difficulty"))
+            {
+                pointerDiff = PlayerPrefs.GetInt("Difficulty");
+            }
+            else
+            {
+                pointerDiff = m_VideoSettingsSO.pointerDiff;
+            }
+           
             // Notify the View of default values from the Model
             SettingsEvents.MasterSliderSet?.Invoke(masterVolume);
             SettingsEvents.SFXSliderSet?.Invoke(sfxVolume);
@@ -87,7 +149,6 @@ namespace IOTU
             SettingsEvents.ContrastSliderSet?.Invoke(valueContrast);
             SettingsEvents.ResolutionSet?.Invoke(pointerRes);
             SettingsEvents.DifficultySet?.Invoke(pointerDiff);
-            GameEvents.NextLevel?.Invoke(gamePlaySave);
         }
 
         // View event handlers

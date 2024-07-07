@@ -58,7 +58,15 @@ public class EnemyScript : MonoBehaviour
     void Start()
     {
         m_VideoSettingsSO = Resources.Load<VideoSettingsSO>("VideoGraphics/VideoSettings_Data"); //Load data from jason file
-        pointer = m_VideoSettingsSO.pointerDiff;
+        if (PlayerPrefs.HasKey("Difficulty"))
+        {
+            pointer = PlayerPrefs.GetInt("Difficulty");
+        }
+        else
+        {
+            pointer = m_VideoSettingsSO.pointerDiff;
+        }
+        
 
         player = GameObject.FindGameObjectWithTag("Player").transform; // Find the player by tag
         agent = GetComponent<NavMeshAgent>(); // Get the NavMeshAgent component

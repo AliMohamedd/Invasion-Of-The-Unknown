@@ -72,23 +72,27 @@ namespace IOTU
         // Event handlers for brightness and contrast changes
         private void SettingsEvents_BrightnessVolumeChanged(float val)
         {
-            valueBrightness = val;
+            PlayerPrefs.SetFloat("Brightness", val);
+            PlayerPrefs.Save();
         }
 
         private void SettingsEvents_ContrastVolumeChanged(float val)
         {
-            valueContrast = val;
+            PlayerPrefs.SetFloat("Contrast", val);
+            PlayerPrefs.Save();
         }
 
         // Event handlers for resolution and difficulty changes
         private void SettingsEvents_ResolutionValumeChanged(int point)
         {
-            pointerRes = point;
+            PlayerPrefs.SetInt("Resolution", point);
+            PlayerPrefs.Save();
         }
 
         private void SettingsEvents_DifficultiValumeChanged(int point)
         {
-            pointerDiff = point;
+            PlayerPrefs.SetInt("Difficulty", point);
+            PlayerPrefs.Save();
         }
     }
 }

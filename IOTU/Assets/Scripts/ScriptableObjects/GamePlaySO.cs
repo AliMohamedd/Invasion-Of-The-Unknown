@@ -40,7 +40,16 @@ namespace IOTU
         // Method to handle the NextLevel event
         private void GameEvents_NextLevel(bool val)
         {
-            NextLevel = val;
+            if (val)
+            {
+               PlayerPrefs.SetInt("NextLevel", 1);
+               PlayerPrefs.Save();
+            }
+            else
+            {
+               PlayerPrefs.SetInt("NextLevel", 0);
+               PlayerPrefs.Save();
+            }
         }
     }
 }
