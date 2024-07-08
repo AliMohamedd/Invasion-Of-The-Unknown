@@ -17,10 +17,6 @@
 | made the UI                 | made the dream manager |                          |
 | made the sequence manager   | made the house manager |                          |
 
-> [!WARNING]
-> You need to download and add the [**Game Level Assets**]() package to see the assets in the scene viewport.
-> You need also to add this local package to the project folder called [**UniTask**](https://www.mediafire.com/file/y6c2hao8jm0hknk/UniTask.rar/file) and then go to **window > Package Manager** to locate the Jason file.
-
 ## References and Resources
 - [QuizUI](https://assetstore.unity.com/packages/essentials/tutorial-projects/quizu-a-ui-toolkit-sample-268492)
 - [Post Processing Profile](https://www.youtube.com/watch?v=OiZXAsn5BWo&t=113s)
@@ -32,5 +28,6 @@
 - [Ghoul](https://sketchfab.com/3d-models/ghoul-c688fc7aaec74817a9851b799a140b5e)
 - [Inventory](https://www.youtube.com/watch?v=x64t5seH6s0)
 
-## Video tutorial
-- 
+> [!WARNING]
+> You need to download and add the [**Game Level Assets**]() package to see the assets in the scene viewport.
+> You need also to add this local package to the project folder called [**UniTask**](https://www.mediafire.com/file/y6c2hao8jm0hknk/UniTask.rar/file) and then go to **window > Package Manager** to locate the Jason file.
