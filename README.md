@@ -30,4 +30,4 @@
 
 > [!WARNING]
 > You need to download and add the [**Game Level Assets**]() package to see the assets in the scene viewport.
-> You need also to add this local package to the project folder called [**UniTask**](https://www.mediafire.com/file/y6c2hao8jm0hknk/UniTask.rar/file) and then go to **window > Package Manager** to locate the Jason file.
+> You need also to add this local package to the project folder called [**UniTask**](https://www.mediafire.com/file/y6c2hao8jm0hknk/UniTask.rar/file) and then go to **window > Package Manager** to locate the Json file.
